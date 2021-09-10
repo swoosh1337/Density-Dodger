@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LOL</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiaWVyb3NoZW5rbyIsImEiOiJja2ZzaGNhbjYwZ2lkMnFycHZtbDJ4b2I0In0.qWo9EvPbSqznZuP1Y0Aekg</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_directions">Get Directions</string>
+    <string name="building_name">Building Name</string>
+    <string name="density_level">Level</string>
+    <string name="overall_density_level">Occupancy Level:</string>
+    <string name="user_location_permission_explanation">Permit our app to get your location so that you will be able to navigate to different places on campus</string>
+    <string name="user_location_permission_not_granted">Permission was not granted :(</string>
+    <string name="new_location">new Location</string>
+    <string name="search_placeholder">Search here</string>
+</resources>

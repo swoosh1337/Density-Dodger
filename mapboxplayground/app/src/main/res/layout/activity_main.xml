@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraBearing="300"
+        mapbox:mapbox_cameraTargetLat="42.273846"
+        mapbox:mapbox_cameraTargetLng="-71.809792"
+        mapbox:mapbox_cameraTilt="40"
+        mapbox:mapbox_cameraZoom="16"
+        mapbox:mapbox_cameraZoomMax="18"
+        mapbox:mapbox_cameraZoomMin="12"
+        mapbox:mapbox_uiRotateGestures="true"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="129dp">
+
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+    <LinearLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+        <com.bignerdranch.android.mapboxplayground.CustomAutoCompleteTextView
+            android:id="@+id/buildingSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:layout_weight="1"
+            android:completionThreshold="0"
+            android:drawableStart="?android:attr/actionModeWebSearchDrawable"
+            android:dropDownHeight="wrap_content"
+            android:hint="@string/search_placeholder"
+            android:inputType="textPhonetic"
+            android:maxHeight="300dp"
+            android:minHeight="50dp"
+            android:outlineProvider="background"
+            android:paddingStart="10dp"
+            android:shadowColor="@color/cardview_shadow_start_color" />
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="13dp"
+                android:background="@android:drawable/ic_menu_close_clear_cancel"
+                android:backgroundTint="#333333"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#2A2E43"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!--        <Button-->
+        <!--            android:id="@+id/button"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="#353A50"-->
+        <!--            android:layout_margin="7dp"-->
+        <!--            android:text="Walking Routes"-->
+        <!--            android:textSize="12sp"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            android:textColor="#FFF"-->
+        <!--            android:drawableTop="@drawable/ic_baseline_map" />-->
+
+        <Button
+            android:id="@+id/studySpaces"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:background="#353A50"
+            android:drawableTop="@drawable/ic_baseline_location"
+            android:text="Study Spaces"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="12sp" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/button2"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="#353A50"-->
+        <!--            android:layout_margin="7dp"-->
+        <!--            android:text="More Info"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            android:textSize="12sp"-->
+        <!--            android:textColor="#FFF"-->
+        <!--            android:drawableTop="@drawable/ic_baseline_info" />-->
+
+        <Button
+            android:id="@+id/myClasses"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:layout_weight="1"
+            android:background="#353A50"
+            android:drawableTop="@drawable/ic_baseline_person"
+            android:text="My Classes"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
