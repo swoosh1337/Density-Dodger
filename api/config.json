@@ -1,0 +1,10 @@
+{
+    "environment": "dev",
+    "epoch_offset": 999999,
+    "db_username": "b0ec116f629fb6",
+    "db_password": "1b2f0771f9e2812",
+    "db_server": "mysql://b0ec116f629fb6:755883d6@us-cdbr-east-02.cleardb.com/heroku_e362e57bba7349a?reconnect=true",
+    "db_host": "us-cdbr-east-02.cleardb.com",
+    "db_database": "heroku_e362e57bba7349a",
+    "db_port": 3306
+}
