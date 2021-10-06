@@ -1,1 +1,1 @@
-Final Project for CS4518 Mobile Development
+Final Project for CS4518 Mobile Development class
