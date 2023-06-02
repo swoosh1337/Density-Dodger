@@ -30,6 +30,6 @@ Open a pull request
 License
 Distributed under the MIT License. See LICENSE for more information.
 
-Acknowledgements
+## Acknowledgements
 Worcester Polytechnic Institute (WPI)
 CS4518 Mobile Development Class
