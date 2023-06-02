@@ -17,7 +17,7 @@ Open the project in your preferred IDE (Android Studio recommended).
 Build and run the project on an emulator or physical device.
 
 ## Technology Stack
-This project is primarily written in Python (98.8%) and Kotlin (0.7%), with small portions in C, PowerShell, CSS, and JavaScript​1​.
+This project is primarily written in Kotlin and Python.
 
 ## Contributing
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
